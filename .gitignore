@@ -1,0 +1,10 @@
+cifar-10-python.tar.gz
+cifar-10-batches-py/
+MNIST/
+FashionMNIST/
+backup/
+figs/
+cifar.py
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
