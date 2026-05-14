@@ -75,7 +75,7 @@ GPU recommended (experiments use CUDA). Datasets:
 Two synthetic texture types are used:
 
 - **Dot texture**: single-pixel dots on a regular grid with random offset
-- **Line texture**: parallel horizontal lines rotated by a random angle (0–45°)
+- **Line/grating texture**: parallel horizontal lines rotated by a random angle (0–45°)
 
 Textures are assigned per class label, so the network can learn either the shape boundary or the background pattern to solve the training task.
 
