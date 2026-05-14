@@ -79,20 +79,19 @@ Two synthetic texture types are used:
 
 Textures are assigned per class label, so the network can learn either the shape boundary or the background pattern to solve the training task.
 
-## Project Structure
+> **Note:** Accurate performance results for all experiments are reported in the associated paper (see citation below).
 
-```
-├── shape_texture_synthetic.ipynb             # Core CNN/MLP/ViT experiment
-├── shape_texture_synthetic_sparse.ipynb      # Sparse CNN experiment
-├── shape_texture_synthetic_sparse_capsule.ipynb  # Capsule network experiment
-├── shape_cross.ipynb                         # Cross-texture shape classification
-├── shape_cross_sparse.ipynb                  # Sparse variant of cross experiment
-├── shape_random_texture.ipynb                # Random texture generalization
-├── shape_random_texture_sparse.ipynb         # Sparse model on MNIST/FashionMNIST
-├── figs/                                     # Output figures
-├── backup/                                   # Earlier experimental notebooks
-├── MNIST/                                    # MNIST dataset
-└── FashionMNIST/                             # FashionMNIST dataset
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@inproceedings{kayyam2026cnns,
+  title     = {Position: {CNN}s Don't See Shape --- And That Won't Change Without New Architectures},
+  author    = {Kayyam, Ali},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  year      = {2026}
+}
 ```
 
 ## Related Work
