@@ -1,10 +1,15 @@
-
 # Shape vs. Texture Bias in Deep Neural Networks
 
 A research project investigating whether neural networks learn shape-based or texture-based features for image classification, using controlled synthetic datasets designed to decouple these two visual cues.
 
-![Shape vs Texture](https://raw.githubusercontent.com/alikayyam/shape_vs_texture/main/shapetexture.png)
-**Figure: Three experimental paradigms for probing shape vs. texture bias. (A) Cue-conflict (Geirhos et al., 2018): shape and texture from different categories placed in conflict. (B) Cue-suppression (Burgert et al., 2025): residual cue leakage limits interpretability. (C) Baker et al. (2018) design adopted here: texture restricted to object region, background kept neutral.**
+
+**Position: CNNs Don't See Shape — And That Won't Change Without New Architectures**
+
+Ali Kayyam (BrainChip Inc.)
+
+Proceedings of the 43rd International Conference on Machine Learning, Seoul, South Korea. PMLR 306, 2026.
+
+ <a href="https://openreview.net/pdf?id=xNbIemTheH">[paper]</a> · <a href="https://openreview.net/forum?id=xNbIemTheH&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2026%2FPosition_Paper_Track%2FAuthors%23your-submissions">[OpenReview]</a>
 
 
 ## Overview
@@ -15,6 +20,10 @@ Neural networks trained on natural images are known to exhibit biases toward eit
 - **Testing**: images are evaluated under 7 conditions including matched, cue-conflict, texture-only, and shape-only variants
 
 The "cue conflict" condition — where the shape label and texture label are inverted — is the key diagnostic: a model relying on shape will succeed, while one relying on texture will fail.
+
+![Shape vs Texture](https://raw.githubusercontent.com/alikayyam/shape_vs_texture/main/shapetexture.png)
+**Figure: Three experimental paradigms for probing shape vs. texture bias. (A) Cue-conflict (Geirhos et al., 2018): shape and texture from different categories placed in conflict. (B) Cue-suppression (Burgert et al., 2025): residual cue leakage limits interpretability. (C) Baker et al. (2018) design adopted here: texture restricted to object region, background kept neutral.**
+
 
 ## Experiments
 
