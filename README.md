@@ -3,6 +3,10 @@
 
 A research project investigating whether neural networks learn shape-based or texture-based features for image classification, using controlled synthetic datasets designed to decouple these two visual cues.
 
+![Shape vs Texture](https://raw.githubusercontent.com/alikayyam/shape_vs_texture/main/shapetexture.png)
+**Figure: Three experimental paradigms for probing shape vs. texture bias. (A) Cue-conflict (Geirhos et al., 2018): shape and texture from different categories placed in conflict. (B) Cue-suppression (Burgert et al., 2025): residual cue leakage limits interpretability. (C) Baker et al. (2018) design adopted here: texture restricted to object region, background kept neutral.**
+
+
 ## Overview
 
 Neural networks trained on natural images are known to exhibit biases toward either shape or texture features. This project isolates that question by generating synthetic images where:
